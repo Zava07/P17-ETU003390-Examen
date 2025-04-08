@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                             http://java.sun.com/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.0">
+    
+    <servlet>
+        <servlet-name>SaveServletCredit</servlet-name>
+        <servlet-class>main.Java.Servlet.SaveServletCredit</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SaveServletCredit</servlet-name>
+        <url-pattern>/saveCredit</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>CreditSevlet</servlet-name>
+        <servlet-class>main.Java.Servlet.CreditServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CreditSevlet</servlet-name>
+        <url-pattern>/Credit</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>SaveDepenseServlet</servlet-name>
+        <servlet-class>main.Java.Servlet.SaveDepenseServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SaveDepenseServlet</servlet-name>
+        <url-pattern>/depense</url-pattern>
+    </servlet-mapping>
+     <servlet>
+        <servlet-name>DashServlet</servlet-name>
+        <servlet-class>main.Java.Servlet.DashServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DashServlet</servlet-name>
+        <url-pattern>/dash</url-pattern>
+    </servlet-mapping>
+</web-app>      
